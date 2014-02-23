@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package>
+  <metadata> 
+    <version>0.1.0.2</version>
+    <authors>Roysvork</authors>
+    <owners>Roysvork</owners>
+    <id>Owin.Context</id>
+    <title>Owin.Context</title>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This package allows you to explicitly define a shared context between middleware for situations where this is permissable such as bootstrapping a framework. Sharing of state between middleware in this way is not encouraged.... where possible share *only* BCL types, through the enviroment dictionary.</description>
+    <dependencies>
+      <dependency id="Owin" version="1.0.0" />
+    </dependencies>
+    <copyright>Pete Smith 2014</copyright>
+  </metadata>
+  <files>
+    <file src="bin\Release\Owin.Context.dll" target="lib\net45\Owin.Context.dll" />
+  </files>
+</package>
