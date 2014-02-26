@@ -7,10 +7,9 @@
     {
         private readonly IAppBuilder baseAppBuilder;
 
-        public ContextBuilder(IAppBuilder baseAppBuilder, T context)
+        public ContextBuilder(IAppBuilder baseAppBuilder)
         {
             this.baseAppBuilder = baseAppBuilder;
-            this.Context = context;
         }
 
         public IAppBuilder Use(object middleware, params object[] args)

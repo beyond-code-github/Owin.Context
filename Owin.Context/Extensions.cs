@@ -6,7 +6,7 @@ namespace Owin.Context
     {
         public static IContextBuilder<T> Context<T>(this IAppBuilder app, Func<IContextBuilder<T>, IContextBuilder<T>> setup) where T : new()
         {
-            return setup(new ContextBuilder<T>(app, new T()));
+            return setup(new ContextBuilder<T>(app));
         }
 
         public static IContextBuilder<T> Use<T>(this IContextBuilder<T> builder, Func<IAppBuilder, T, IAppBuilder> setup)
